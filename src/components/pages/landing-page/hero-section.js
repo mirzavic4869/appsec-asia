@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className="bg-hero h-[700px] py-52">
       <div className="mx-auto max-w-7xl">
         <div className="text-center text-white">
-          <h1 className="mb-6 text-5xl font-bold">Appsec Asia</h1>
+          <h1 className="mb-6 text-4xl font-bold md:text-5xl">Appsec Asia</h1>
           <h6 className="md:w-[48rem] mx-auto mb-16">
             <strong>Appsec Asia</strong> is a company involved in providing
             IT-security, specializing in computer, network, and application

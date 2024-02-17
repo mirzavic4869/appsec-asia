@@ -4,7 +4,7 @@ import { navbarLandingPageMenu } from '../lib'
 
 export default function HeaderLandingPage() {
   return (
-    <nav className="sticky top-0 z-50 p-4 bg-white shadow-sm md:px-8 lg:px-12">
+    <nav className="sticky top-0 z-50 p-4 bg-white shadow-sm md:px-16 lg:px-20">
       <div className="flex flex-row items-center justify-between mx-auto max-w-7xl">
         <Link href={'/'}>
           <strong>appsec.asia</strong>
