@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-hero {
+  background: url('../assets/images/bg-hero.png'), no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-layer {
+  background-color: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

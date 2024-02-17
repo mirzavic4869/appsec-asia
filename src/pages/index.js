@@ -1,8 +1,13 @@
 import { LayoutLandingPage } from "@/components/layouts";
+import { HeroSection } from "@/components/pages/landing-page";
 import React from "react";
 
 export default function Home() {
-	return <div>Hello</div>;
+	return (
+		<>
+			<HeroSection />
+		</>
+	);
 }
 
 Home.getLayout = function getLayout(page) {
