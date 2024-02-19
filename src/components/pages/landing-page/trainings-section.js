@@ -1,21 +1,22 @@
 import Image from 'next/image'
 import photo from '@/assets/images/card-service1.png'
 import React from 'react'
+import { FaArrowRight } from 'react-icons/fa'
 import { serviceData } from '@/components/lib'
 import { ButtonOutline2 } from '@/components/button'
 
-export default function ServicesSection() {
+export default function TrainingsSection() {
   return (
     <div className="px-4 py-12 md:px-16 lg:px-20 bg-background">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 text-center md:mb-16">
           <h2 className="mb-4 text-2xl font-bold md:text-3xl">
-            Benefit of <span className="text-secondary">Choosing Us</span>
+            <span className="text-secondary">Our Training </span>and
+            Certification
           </h2>
-          <p>The service we offer for your industry</p>
         </div>
         {/* Card */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 mb-6 md:grid-cols-2 lg:grid-cols-3">
           {serviceData.map(({ title, desc }, index) => (
             <div
               key={index}
@@ -29,6 +30,12 @@ export default function ServicesSection() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex flex-row items-center justify-center gap-2 text-center hover:text-secondary">
+          <p>Explore more jobs</p>
+          <i>
+            <FaArrowRight />
+          </i>
         </div>
       </div>
     </div>

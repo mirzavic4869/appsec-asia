@@ -1,7 +1,15 @@
 import HeroSection from './hero-section'
 import AboutSection from './about-section'
-import Services from './services-section'
+import ServicesSection from './services-section'
 import TestimonySection from './testimony-section'
 import MotoSection from './moto-section'
+import TrainingsSection from './trainings-section'
 
-export { HeroSection, AboutSection, Services, TestimonySection, MotoSection }
+export {
+  HeroSection,
+  AboutSection,
+  ServicesSection,
+  TestimonySection,
+  MotoSection,
+  TrainingsSection,
+}

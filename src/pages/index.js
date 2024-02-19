@@ -3,8 +3,9 @@ import {
   AboutSection,
   HeroSection,
   MotoSection,
-  Services,
+  ServicesSection,
   TestimonySection,
+  TrainingsSection,
 } from '@/components/pages/landing-page'
 import React from 'react'
 
@@ -13,9 +14,10 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
-      <Services />
+      <ServicesSection />
       <TestimonySection />
       <MotoSection />
+      <TrainingsSection />
     </>
   )
 }
