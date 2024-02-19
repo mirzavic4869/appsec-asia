@@ -4,6 +4,7 @@ import ServicesSection from './services-section'
 import TestimonySection from './testimony-section'
 import MotoSection from './moto-section'
 import TrainingsSection from './trainings-section'
+import ContactUsSection from './contact-section'
 
 export {
   HeroSection,
@@ -12,4 +13,5 @@ export {
   TestimonySection,
   MotoSection,
   TrainingsSection,
+  ContactUsSection,
 }

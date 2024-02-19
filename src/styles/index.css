@@ -32,3 +32,9 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.bg-contact {
+  background: url('../assets/images/bg-contact.png'), no-repeat;
+  background-position: center;
+  background-size: cover;
+}

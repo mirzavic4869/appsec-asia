@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Button({ children, type, ...props }) {
+function Button({ children, classAdd, type, ...props }) {
   return (
     <button
       {...props}
-      className="rounded-md bg-secondary transition-all duration-300 ease-in-out px-8 py-2.5 text-sm font-medium text-white hover:bg-blue-900 hover:shadow-md focus:ring-1 focus:bg-tertiary"
+      className={`${classAdd} rounded-md bg-secondary transition-all duration-300 ease-in-out px-8 py-2.5 text-sm font-medium text-white hover:bg-blue-900 hover:shadow-md focus:ring-1 focus:bg-tertiary`}
     >
       {children}
     </button>
