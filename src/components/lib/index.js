@@ -1,3 +1,4 @@
-import { navbarLandingPageMenu } from "./navbar-landingpage";
+import { navbarLandingPageMenu } from './navbar-landingpage'
+import { serviceData } from './services'
 
-export { navbarLandingPageMenu };
+export { navbarLandingPageMenu, serviceData }

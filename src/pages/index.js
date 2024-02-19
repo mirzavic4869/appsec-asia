@@ -1,5 +1,9 @@
 import { LayoutLandingPage } from '@/components/layouts'
-import { AboutSection, HeroSection } from '@/components/pages/landing-page'
+import {
+  AboutSection,
+  HeroSection,
+  Services,
+} from '@/components/pages/landing-page'
 import React from 'react'
 
 export default function Home() {
@@ -7,6 +11,7 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
+      <Services />
     </>
   )
 }

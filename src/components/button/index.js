@@ -1,3 +1,3 @@
-import { Button, ButtonOutline } from './button'
+import { Button, ButtonOutline, ButtonOutline2 } from './button'
 
-export { Button, ButtonOutline }
+export { Button, ButtonOutline, ButtonOutline2 }
