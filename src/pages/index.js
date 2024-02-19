@@ -3,6 +3,7 @@ import {
   AboutSection,
   HeroSection,
   Services,
+  TestimonySection,
 } from '@/components/pages/landing-page'
 import React from 'react'
 
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <Services />
+      <TestimonySection />
     </>
   )
 }
