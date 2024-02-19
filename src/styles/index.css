@@ -26,3 +26,9 @@ body {
   background-position: right;
   background-size: contain;
 } */
+
+.bg-moto {
+  background: url('../assets/images/bg-moto.png'), no-repeat;
+  background-position: center;
+  background-size: cover;
+}

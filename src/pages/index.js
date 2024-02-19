@@ -2,6 +2,7 @@ import { LayoutLandingPage } from '@/components/layouts'
 import {
   AboutSection,
   HeroSection,
+  MotoSection,
   Services,
   TestimonySection,
 } from '@/components/pages/landing-page'
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSection />
       <Services />
       <TestimonySection />
+      <MotoSection />
     </>
   )
 }
