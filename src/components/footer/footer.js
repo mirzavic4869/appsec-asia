@@ -22,7 +22,7 @@ export default function FooterLandingPage() {
             <div key={index}>
               <p className="text-lg font-semibold text-white">{item.title}</p>
               {item.sub_menu.map((subitem, i) => (
-                <div key={i} className="my-1 text-sm text-white">
+                <div key={i} className="my-2 text-sm text-white">
                   <p>{subitem.sub_title}</p>
                 </div>
               ))}

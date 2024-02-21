@@ -10,11 +10,13 @@ export default function HeaderLandingPage() {
           <strong>appsec.asia</strong>
         </Link>
         <div className="flex-row items-center hidden gap-8 md:flex">
-          {navbarLandingPageMenu.map(({ title }, index) => (
+          {navbarLandingPageMenu.map(({ title, url }, index) => (
             <ul key={index}>
-              <li className="hover:text-secondary hover:cursor-pointer">
-                {title}
-              </li>
+              <Link href={url}>
+                <li className="hover:text-secondary hover:cursor-pointer">
+                  {title}
+                </li>
+              </Link>
             </ul>
           ))}
         </div>

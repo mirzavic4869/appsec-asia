@@ -1,17 +1,22 @@
 export const navbarLandingPageMenu = [
-	{
-		title: "Home",
-	},
-	{
-		title: "IT Services",
-	},
-	{
-		title: "Testimony",
-	},
-	{
-		title: "Trainings",
-	},
-	{
-		title: "Contact Us",
-	},
-];
+  {
+    title: 'Home',
+    url: '/',
+  },
+  {
+    title: 'IT Services',
+    url: '/services',
+  },
+  {
+    title: 'Testimony',
+    url: '',
+  },
+  {
+    title: 'Trainings',
+    url: '/trainings',
+  },
+  {
+    title: 'Contact Us',
+    url: 'https://wa.me/6282154552020',
+  },
+]
