@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  color: #2b2b2b;
+  color: #121212;
 }
 
 .bg-hero {
@@ -21,11 +21,11 @@ body {
   height: 100%;
 }
 
-/* .bg-asia {
+.bg-asia {
   background: url('../assets/images/bg-asia.png'), no-repeat;
-  background-position: right;
-  background-size: contain;
-} */
+  background-position: center;
+  background-size: cover;
+}
 
 .bg-moto {
   background: url('../assets/images/bg-moto.png'), no-repeat;
