@@ -22,9 +22,11 @@ export default function FooterLandingPage() {
             <div key={index}>
               <p className="text-lg font-semibold text-white">{item.title}</p>
               {item.sub_menu.map((subitem, i) => (
-                <div key={i} className="my-2 text-sm text-white">
-                  <p>{subitem.sub_title}</p>
-                </div>
+                <Link href={subitem.url} key={i}>
+                  <p className="my-2 text-sm text-white hover:text-blue-400 hover:cursor-pointer">
+                    {subitem.sub_title}
+                  </p>
+                </Link>
               ))}
             </div>
           ))}

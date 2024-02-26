@@ -1,5 +1,7 @@
 import { Button } from '@/components/button'
+import Link from 'next/link'
 import { FaWhatsapp } from 'react-icons/fa'
+import { HiOutlineMail } from 'react-icons/hi'
 
 export default function ContactUsSection() {
   return (
@@ -17,9 +19,16 @@ export default function ContactUsSection() {
           <button className="flex items-center gap-2 px-6 py-2 font-semibold transition-all duration-300 ease-out text-white bg-gradient-to-r text-sm from-[#2BD769] to-[#075E54] hover:bg-green-900 rounded-md">
             <FaWhatsapp /> Whatsapp
           </button>
-          <Button classAdd="flex items-center">
-            <FaWhatsapp /> Email
-          </Button>
+          <Link
+            href={
+              'https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=sales@appsec.asia'
+            }
+          >
+            <Button classAdd="flex items-center gap-2">
+              <HiOutlineMail />
+              Email
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
