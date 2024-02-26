@@ -1,5 +1,5 @@
 import { Button } from '@/components/button'
-import { comptiaSecurity } from '@/components/lib'
+import { comptiaCloud } from '@/components/lib'
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
@@ -16,24 +16,13 @@ export default function Training13Section() {
         </div>
         <div className="mb-6 space-y-4">
           <p>
-            The CompTIA Security+ Certification is a vendor neutral credential.
-            The CompTIA Security+ exam is an internationally recognized
-            validation of foundation-level security skills and knowledge, and is
-            used by organizations and security professionals around the globe.
-          </p>
-          <p>
-            The CompTIA Security+ exam will certify that the successful
-            candidate has the knowledge and skills required to identify risk and
-            participate in risk mitigation activities, provide infrastructure,
-            application, operational and information security, apply security
-            controls to maintain confidentiality, integrity and availability,
-            identify appropriate technologies and products, and operate with an
-            awareness of applicable policies, laws and regulations.
-          </p>
-          <p>
-            CompTIA Security+ is accredited by ANSI to show compliance with the
-            ISO 17024 Standard and, as such, undergoes regular reviews and
-            updates to the exam objectives.
+            The CompTIA Cloud+ certification is an internationally recognized
+            validation of the knowledge required of IT practitioners working in
+            cloud computing environments. CompTIA Cloud+ certification validates
+            the skills and expertise of IT practitioners in implementing and
+            maintaining cloud technologies. Cloud+ accredits IT professionals
+            with the constantly changing and advancing knowledge they need to be
+            successful in today’s cloud environment.
           </p>
         </div>
 
@@ -42,7 +31,7 @@ export default function Training13Section() {
           Program Objectives
         </h4>
         <div className="flex flex-col gap-4 mb-6">
-          {comptiaSecurity.map(({ title }, index) => (
+          {comptiaCloud.map(({ title }, index) => (
             <div key={index} className="flex items-center gap-4">
               <FaCheckCircle color="#4360E5" />
               <p>{title}</p>

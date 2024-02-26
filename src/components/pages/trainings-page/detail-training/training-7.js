@@ -1,5 +1,5 @@
 import { Button } from '@/components/button'
-import { comptiaSecurity } from '@/components/lib'
+import { comptiaProject } from '@/components/lib'
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
@@ -16,33 +16,29 @@ export default function Training7Section() {
         </div>
         <div className="mb-6 space-y-4">
           <p>
-            The CompTIA Security+ Certification is a vendor neutral credential.
-            The CompTIA Security+ exam is an internationally recognized
-            validation of foundation-level security skills and knowledge, and is
-            used by organizations and security professionals around the globe.
+            CompTIA Project+ certifies the knowledge and skills of professionals
+            in project management. Project+ validates the ability to initiate,
+            manage and support a project or business initiative. And it’s not
+            just for IT technicians; Project+ is designed for any individual who
+            wants to validate project management experience.
           </p>
           <p>
-            The CompTIA Security+ exam will certify that the successful
-            candidate has the knowledge and skills required to identify risk and
-            participate in risk mitigation activities, provide infrastructure,
-            application, operational and information security, apply security
-            controls to maintain confidentiality, integrity and availability,
-            identify appropriate technologies and products, and operate with an
-            awareness of applicable policies, laws and regulations.
-          </p>
-          <p>
-            CompTIA Security+ is accredited by ANSI to show compliance with the
-            ISO 17024 Standard and, as such, undergoes regular reviews and
-            updates to the exam objectives.
+            Project management is one of the business world’s most in-demand
+            skill sets, both inside and outside the IT profession. Even the
+            smallest projects can benefit from project management processes.
+            Well-run projects save time and ensure continued focus on company
+            goals. The CompTIA Project+ certification validates the
+            communication and business skills you need to lead projects with
+            confidence, complete projects on time and make sure you stay within
+            budget.
           </p>
         </div>
-
         {/* program objectives */}
         <h4 className="mb-4 text-lg font-semibold md:text-xl text-secondary">
           Program Objectives
         </h4>
         <div className="flex flex-col gap-4 mb-6">
-          {comptiaSecurity.map(({ title }, index) => (
+          {comptiaProject.map(({ title }, index) => (
             <div key={index} className="flex items-center gap-4">
               <FaCheckCircle color="#4360E5" />
               <p>{title}</p>

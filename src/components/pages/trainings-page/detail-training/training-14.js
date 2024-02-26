@@ -1,5 +1,5 @@
 import { Button } from '@/components/button'
-import { comptiaSecurity } from '@/components/lib'
+import { comptiaA } from '@/components/lib'
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
@@ -16,24 +16,23 @@ export default function Training14Section() {
         </div>
         <div className="mb-6 space-y-4">
           <p>
-            The CompTIA Security+ Certification is a vendor neutral credential.
-            The CompTIA Security+ exam is an internationally recognized
-            validation of foundation-level security skills and knowledge, and is
-            used by organizations and security professionals around the globe.
+            The CompTIA A+ Certification is a vendor neutral credential. CompTIA
+            A+ is globally recognized and accredited by ANSI, compliant with ISO
+            17024 standards and is approved by the U.S. Department of Defense to
+            meet directive 8570.01-M requirements. It validates understanding of
+            the most common hardware and software technologies in business and
+            certifies the skills necessary to support complex IT
+            infrastructures. CompTIA A+ is a powerful credential that helps IT
+            professionals worldwide ignite their IT career.
           </p>
           <p>
-            The CompTIA Security+ exam will certify that the successful
-            candidate has the knowledge and skills required to identify risk and
-            participate in risk mitigation activities, provide infrastructure,
-            application, operational and information security, apply security
-            controls to maintain confidentiality, integrity and availability,
-            identify appropriate technologies and products, and operate with an
-            awareness of applicable policies, laws and regulations.
-          </p>
-          <p>
-            CompTIA Security+ is accredited by ANSI to show compliance with the
-            ISO 17024 Standard and, as such, undergoes regular reviews and
-            updates to the exam objectives.
+            CompTIA A+ establishes best practices in troubleshooting, networking
+            and security across a variety of devices to set the stage for IT
+            careers. The certification also matches professional tech skills
+            with communication skills. It is developed and maintained by leading
+            IT experts. Content for the exams stems from a combination of
+            industry-wide survey feedback and contributions from our team of
+            subject matter experts.
           </p>
         </div>
 
@@ -42,7 +41,7 @@ export default function Training14Section() {
           Program Objectives
         </h4>
         <div className="flex flex-col gap-4 mb-6">
-          {comptiaSecurity.map(({ title }, index) => (
+          {comptiaA.map(({ title }, index) => (
             <div key={index} className="flex items-center gap-4">
               <FaCheckCircle color="#4360E5" />
               <p>{title}</p>

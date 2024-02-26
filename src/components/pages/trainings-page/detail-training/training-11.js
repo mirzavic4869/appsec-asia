@@ -1,5 +1,5 @@
 import { Button } from '@/components/button'
-import { comptiaSecurity } from '@/components/lib'
+import { comptiaAdvancedSecurity } from '@/components/lib'
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
@@ -16,24 +16,19 @@ export default function Training11Section() {
         </div>
         <div className="mb-6 space-y-4">
           <p>
-            The CompTIA Security+ Certification is a vendor neutral credential.
-            The CompTIA Security+ exam is an internationally recognized
-            validation of foundation-level security skills and knowledge, and is
-            used by organizations and security professionals around the globe.
+            The CompTIA Advanced Security Practitioner (CASP) Certification is a
+            vendor-neutral credential. The CASP exam is an internationally
+            targeted validation of advanced-level security skills and knowledge.
+            While there is no required prerequisite, the CASP certification is
+            intended to follow CompTIA Security+ or equivalent experience and
+            has a technical, “hands-on” focus at the enterprise level.
           </p>
           <p>
-            The CompTIA Security+ exam will certify that the successful
-            candidate has the knowledge and skills required to identify risk and
-            participate in risk mitigation activities, provide infrastructure,
-            application, operational and information security, apply security
-            controls to maintain confidentiality, integrity and availability,
-            identify appropriate technologies and products, and operate with an
-            awareness of applicable policies, laws and regulations.
-          </p>
-          <p>
-            CompTIA Security+ is accredited by ANSI to show compliance with the
-            ISO 17024 Standard and, as such, undergoes regular reviews and
-            updates to the exam objectives.
+            CASP meets the growing demand for advanced IT security in the
+            enterprise. Recommended for IT professionals with at least 5 years
+            of experience, CASP certifies critical thinking and judgment across
+            a broad spectrum of security disciplines and requires candidates to
+            implement clear solutions in complex environments.
           </p>
         </div>
 
@@ -42,7 +37,7 @@ export default function Training11Section() {
           Program Objectives
         </h4>
         <div className="flex flex-col gap-4 mb-6">
-          {comptiaSecurity.map(({ title }, index) => (
+          {comptiaAdvancedSecurity.map(({ title }, index) => (
             <div key={index} className="flex items-center gap-4">
               <FaCheckCircle color="#4360E5" />
               <p>{title}</p>

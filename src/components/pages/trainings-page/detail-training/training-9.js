@@ -1,5 +1,5 @@
 import { Button } from '@/components/button'
-import { comptiaSecurity } from '@/components/lib'
+import { comptiaNetwork } from '@/components/lib'
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
@@ -16,24 +16,24 @@ export default function Training9Section() {
         </div>
         <div className="mb-6 space-y-4">
           <p>
-            The CompTIA Security+ Certification is a vendor neutral credential.
-            The CompTIA Security+ exam is an internationally recognized
-            validation of foundation-level security skills and knowledge, and is
-            used by organizations and security professionals around the globe.
+            The CompTIA Network+ certification is an internationally recognized
+            validation of the technical knowledge required of foundation-level
+            IT network practitioners.
           </p>
           <p>
-            The CompTIA Security+ exam will certify that the successful
-            candidate has the knowledge and skills required to identify risk and
-            participate in risk mitigation activities, provide infrastructure,
-            application, operational and information security, apply security
-            controls to maintain confidentiality, integrity and availability,
-            identify appropriate technologies and products, and operate with an
-            awareness of applicable policies, laws and regulations.
+            The CompTIA Network+ certification ensures that the successful
+            candidate has the important knowledge and skills necessary to
+            manage, maintain, troubleshoot, install, operate and configure basic
+            network infrastructure, describe networking technologies, basic
+            design principles, and adhere to wiring standards and use testing
+            tools.
           </p>
           <p>
-            CompTIA Security+ is accredited by ANSI to show compliance with the
-            ISO 17024 Standard and, as such, undergoes regular reviews and
-            updates to the exam objectives.
+            The skills and knowledge measured by this examination were derived
+            from an industry-wide job task analysis and validated through an
+            industry-wide global survey in Q2 2008. The results of this survey
+            were used in weighing the domains and ensuring that the weighting is
+            representative of the relative importance of the content.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export default function Training9Section() {
           Program Objectives
         </h4>
         <div className="flex flex-col gap-4 mb-6">
-          {comptiaSecurity.map(({ title }, index) => (
+          {comptiaNetwork.map(({ title }, index) => (
             <div key={index} className="flex items-center gap-4">
               <FaCheckCircle color="#4360E5" />
               <p>{title}</p>
@@ -53,7 +53,7 @@ export default function Training9Section() {
         {/* Price */}
         <div className="flex items-center justify-between">
           <h4 className="mb-4 text-lg font-semibold">Price</h4>
-          <Button>Rp 9.000.000</Button>
+          <Button>Rp 7.000.000</Button>
         </div>
       </div>
     </div>

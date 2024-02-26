@@ -7,6 +7,15 @@ import {
   lfs262Data,
   lfd121Data,
   comptiaSecurity,
+  comptiaServer,
+  comptiaProject,
+  comptiaNetwork,
+  comptiaMobility,
+  comptiaLinux,
+  comptiaCloudEssential,
+  comptiaCloud,
+  comptiaAdvancedSecurity,
+  comptiaA,
 } from './detail-training'
 
 export {
@@ -18,4 +27,13 @@ export {
   lfs262Data,
   lfd121Data,
   comptiaSecurity,
+  comptiaServer,
+  comptiaProject,
+  comptiaNetwork,
+  comptiaMobility,
+  comptiaLinux,
+  comptiaCloudEssential,
+  comptiaCloud,
+  comptiaAdvancedSecurity,
+  comptiaA,
 }
