@@ -17,6 +17,7 @@ import {
   comptiaAdvancedSecurity,
   comptiaA,
 } from './detail-training'
+import { randomCard } from './random-card'
 
 export {
   navbarLandingPageMenu,
@@ -36,4 +37,5 @@ export {
   comptiaCloud,
   comptiaAdvancedSecurity,
   comptiaA,
+  randomCard,
 }

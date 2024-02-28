@@ -5,7 +5,7 @@ export const navbarLandingPageMenu = [
   },
   {
     title: 'IT Services',
-    url: '/services',
+    url: '',
   },
   {
     title: 'Testimony',

@@ -1,12 +1,21 @@
 import Image from 'next/image'
 import photo from '@/assets/images/card-service1.png'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
-import { serviceData } from '@/components/lib'
+import { listTrainingData } from '@/components/lib'
 import { ButtonOutline2 } from '@/components/button'
 import Link from 'next/link'
+import { randomCard } from '@/components/lib'
 
 export default function TrainingsSection() {
+  const [displayCard, setDisplayCard] = useState([])
+
+  useEffect(() => {
+    const shuffledCards = randomCard(listTrainingData)
+    const selectedCards = shuffledCards.slice(0, 3)
+    setDisplayCard(selectedCards)
+  }, [])
+
   return (
     <div className="px-4 py-12 md:px-16 lg:px-20 bg-background">
       <div className="mx-auto max-w-7xl">
@@ -18,7 +27,7 @@ export default function TrainingsSection() {
         </div>
         {/* Card */}
         <div className="grid gap-4 mb-6 md:grid-cols-2 lg:grid-cols-3">
-          {serviceData.map(({ title, desc }, index) => (
+          {displayCard.map(({ title, desc }, index) => (
             <div
               key={index}
               className="max-w-sm transition-all duration-300 ease-in-out bg-white shadow-lg rounded-t-3xl hover:shadow-xl hover:bg-secondary hover:text-white"

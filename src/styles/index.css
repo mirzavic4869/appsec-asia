@@ -10,13 +10,14 @@ body {
   background: url('../assets/images/bg-hero.png'), no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
-.bg-layer {
+.bg-hero::after {
+  content: '';
   background-color: rgba(0, 0, 0, 0.63);
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
 }
@@ -37,4 +38,19 @@ body {
   background: url('../assets/images/bg-contact.png'), no-repeat;
   background-position: center;
   background-size: cover;
+}
+.bg-train {
+  background: url('../assets/images/bg-train.jpg'), no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-train::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
