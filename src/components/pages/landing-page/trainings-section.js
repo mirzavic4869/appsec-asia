@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import photo from '@/assets/images/card-service1.png'
+import photo from '@/assets/images/card-service2.png'
 import React, { useEffect, useState } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { listTrainingData } from '@/components/lib'
@@ -27,7 +27,7 @@ export default function TrainingsSection() {
         </div>
         {/* Card */}
         <div className="grid gap-4 mb-6 md:grid-cols-2 lg:grid-cols-3">
-          {displayCard.map(({ title, desc }, index) => (
+          {displayCard.map(({ title, desc, url }, index) => (
             <div
               key={index}
               className="max-w-sm transition-all duration-300 ease-in-out bg-white shadow-lg rounded-t-3xl hover:shadow-xl hover:bg-secondary hover:text-white"
@@ -36,7 +36,9 @@ export default function TrainingsSection() {
               <div className="p-6 ">
                 <h3 className="text-xl font-bold">{title}</h3>
                 <p className="my-4 text-sm">{desc}</p>
-                <ButtonOutline2>Read more</ButtonOutline2>
+                <Link href={url}>
+                  <ButtonOutline2>Read more</ButtonOutline2>
+                </Link>
               </div>
             </div>
           ))}

@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function HeroSection() {
   return (
-    <div className="bg-hero h-[700px] py-52">
+    <div className="bg-hero h-[700px] py-48">
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="text-center text-white">
           <h1 className="mb-6 text-4xl font-bold md:text-5xl">Appsec Asia</h1>

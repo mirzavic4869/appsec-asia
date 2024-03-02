@@ -8,7 +8,7 @@ export const footerMenu = [
       },
       {
         sub_title: 'IT Services',
-        url: '/services',
+        url: '',
       },
       {
         sub_title: 'Testimony',
