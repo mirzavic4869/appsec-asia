@@ -4,15 +4,18 @@ import React, { useEffect, useState } from 'react'
 export default function PostArticle() {
   const [todos, setTodos] = useState(() => {
     // get the todos from localstorage
-    const savedTodos = localStorage.getItem('todos')
-    // if there are todos stored
-    if (savedTodos) {
-      // return the parsed the JSON object back to a javascript object
-      return JSON.parse(savedTodos)
-      // otherwise
-    } else {
-      // return an empty array
-      return []
+    if (typeof window !== 'undefined') {
+      const savedTodos = localStorage.getItem('todos')
+
+      // if there are todos stored
+      if (savedTodos) {
+        // return the parsed the JSON object back to a javascript object
+        return JSON.parse(savedTodos)
+        // otherwise
+      } else {
+        // return an empty array
+        return []
+      }
     }
   })
   // need state to keep track of the value in the input
@@ -77,15 +80,14 @@ export default function PostArticle() {
         </form>
 
         {/* create a ul to hold all of the list items */}
-        <ul className="todo-list">
-          {/* map over the todos array which creates a new li element for every todo
+
+        {/* map over the todos array which creates a new li element for every todo
         (make sure to add the "key" prop using the unique todo.id value to the li element)
         remember this is an array of objects - so we need to access the property 
         "text" to get the value we want to display */}
-          {todos.map((todo) => (
-            <li key={todo.id}>{todo.text}</li>
-          ))}
-        </ul>
+        {todos?.map((todo) => (
+          <p key={todo.id}>{todo.text}</p>
+        ))}
       </div>
     </div>
   )
