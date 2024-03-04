@@ -16,15 +16,17 @@ export default function ContactUsSection() {
           since receiving your issue ticket.
         </p>
         <div className="flex justify-center gap-6">
-          <button className="flex items-center gap-2 px-6 py-2 font-semibold transition-all duration-300 ease-out text-white bg-gradient-to-r text-sm from-[#2BD769] to-[#075E54] hover:bg-green-900 rounded-md">
-            <FaWhatsapp /> Whatsapp
-          </button>
+          <Link href={'https://wa.me/6282154552020'}>
+            <button className="flex items-center gap-2 px-6 py-2.5 font-semibold transition-all duration-300 ease-out text-white bg-gradient-to-r text-sm from-[#2BD769] to-[#075E54] hover:bg-green-900 rounded-md">
+              <FaWhatsapp /> Whatsapp
+            </button>
+          </Link>
           <Link
             href={
               'https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=sales@appsec.asia'
             }
           >
-            <Button classAdd="flex items-center gap-2">
+            <Button classAdd="flex items-center gap-2 py-2.5">
               <HiOutlineMail />
               Email
             </Button>
