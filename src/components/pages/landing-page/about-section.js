@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import bgAsia from '@/assets/images/bg-asia.png'
 import React from 'react'
+import logo from '@/assets/images/logo-appsecasia.png'
 
 export default function AboutSection() {
   return (
@@ -33,10 +34,8 @@ export default function AboutSection() {
             />
           </div>
         </div>
-        <div className="flex justify-end">
-          <strong className="text-2xl md:text-3xl text-slate-200">
-            appsec.asia
-          </strong>
+        <div className="flex justify-end opacity-10">
+          <Image src={logo} alt="Logo Appsecasia" width={180} />
         </div>
       </div>
     </div>

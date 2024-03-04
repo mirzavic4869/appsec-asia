@@ -2,6 +2,8 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { navbarLandingPageMenu } from '../lib'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import logo from '@/assets/images/logo-appsecasia.png'
+import Image from 'next/image'
 
 export default function HeaderLandingPage() {
   // const [active, setActive] = useState(false)
@@ -10,7 +12,7 @@ export default function HeaderLandingPage() {
     <nav className="sticky top-0 z-50 p-4 bg-white shadow-sm md:px-16 lg:px-20">
       <div className="flex flex-row items-center justify-between mx-auto max-w-7xl">
         <Link href={'/'}>
-          <strong>appsec.asia</strong>
+          <Image src={logo} alt="Logo Appsecasia" width={120} />
         </Link>
         {!isShowMobileMenu ? (
           <FaBars
