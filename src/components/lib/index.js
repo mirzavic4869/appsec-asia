@@ -18,6 +18,7 @@ import {
   comptiaA,
 } from './detail-training'
 import { randomCard } from './random-card'
+import { testimonailData } from './testimony'
 
 export {
   navbarLandingPageMenu,
@@ -38,4 +39,5 @@ export {
   comptiaAdvancedSecurity,
   comptiaA,
   randomCard,
+  testimonailData,
 }

@@ -19,8 +19,8 @@ export default function HeroSection() {
           <ScrollLink to={'#services'} smooth duration={500}>
             <Button>Get services</Button>
           </ScrollLink>
-          <Link href={'/post'}>
-            <ButtonOutline>Post article</ButtonOutline>
+          <Link href={'https://wa.me/6282154552020'}>
+            <ButtonOutline>Contact us</ButtonOutline>
           </Link>
         </div>
       </div>
