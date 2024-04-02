@@ -11,8 +11,8 @@ export const footerMenu = [
         url: '',
       },
       {
-        sub_title: 'Testimony',
-        url: '',
+        sub_title: 'Our Product',
+        url: 'https://www.sdt.co.id/product/hcl-bigfix',
       },
       {
         sub_title: 'Trainings',

@@ -8,8 +8,8 @@ export const navbarLandingPageMenu = [
     url: '',
   },
   {
-    title: 'Testimony',
-    url: '',
+    title: 'Our Product',
+    url: 'https://www.sdt.co.id/product/hcl-bigfix',
   },
   {
     title: 'Trainings',
