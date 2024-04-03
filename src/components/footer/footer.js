@@ -15,7 +15,7 @@ export default function FooterLandingPage() {
           </Link>
           {/* Location */}
           <p className="text-white md:w-[16rem] lg:w-[24rem]">
-            Graha Pena 9 th floor Jl. Raya Kby. Lama No.903, Grogol Utara, Kec.
+            Graha Pena 7 th floor Jl. Raya Kby. Lama No.903, Grogol Utara, Kec.
             Kby. Lama, Kota Jakarta Selatan, DKI Jakarta 12210
           </p>
         </div>
