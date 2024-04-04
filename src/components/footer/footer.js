@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { footerMenu } from '../lib'
-import logo from '@/assets/images/logo-appsecasia-white.png'
+import logo from '../../assets/images/logo-appsecasia-white.png'
 import Image from 'next/image'
 
 export default function FooterLandingPage() {
