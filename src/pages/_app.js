@@ -1,4 +1,4 @@
-import '@/styles/index.css'
+import './index.css'
 import Head from 'next/head'
 
 export default function App({ Component, pageProps }) {
@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>appsec asia</title>
-        <link rel="icon" href="/icon-appsecasia.png" sizes="20px" />
+        <link rel="icon" href="/icon.ico" sizes="20px" />
       </Head>
       {getLayout(<Component {...pageProps} />)}
     </>

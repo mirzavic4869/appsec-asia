@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import bgAsia from '../../../assets/images/bg-asia.png'
+import bgAsia from '/public/bg-asia.png'
 import React from 'react'
-import logo from '../../../assets/images/logo-appsecasia.png'
+import logo from '/public/logo-appsecasia.png'
 
 export default function AboutSection() {
   return (

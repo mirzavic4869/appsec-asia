@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import photo from '@/assets/images/card-service2.png'
+import photo from '/public/card-service2.png'
 import React from 'react'
 import { listTrainingData } from '@/components/lib'
 import { ButtonOutline2 } from '@/components/button'
