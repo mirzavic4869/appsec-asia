@@ -12,7 +12,7 @@ export const footerMenu = [
       },
       {
         sub_title: 'Our Product',
-        url: 'https://www.sdt.co.id/product/hcl-bigfix',
+        url: '',
       },
       {
         sub_title: 'Trainings',

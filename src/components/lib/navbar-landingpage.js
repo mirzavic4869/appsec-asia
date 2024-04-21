@@ -9,7 +9,7 @@ export const navbarLandingPageMenu = [
   },
   {
     title: 'Our Product',
-    url: 'https://www.sdt.co.id/product/hcl-bigfix',
+    url: '',
   },
   {
     title: 'Trainings',
