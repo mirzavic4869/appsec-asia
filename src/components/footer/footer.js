@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 export default function FooterLandingPage() {
   return (
-    <footer className="px-4 py-6 md:py-12 bg-secondary md:px-8 lg:px-12">
+    <footer className="px-4 py-6 md:py-12 bg-secondary md:px-16 lg:px-20">
       <div className="flex flex-col justify-between gap-6 mx-auto md:flex-row max-w-7xl">
         <div className="flex flex-col md:justify-between">
           <Link href={'/'} className="mb-8">
