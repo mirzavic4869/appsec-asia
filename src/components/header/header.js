@@ -26,6 +26,28 @@ export default function HeaderLandingPage() {
     {
       sub_title: 'Penetration Testing',
       url: '/services/penetration-testing',
+      sub_menu: [
+        {
+          sub_title: 'Black Box',
+          url: '/services/penetration-testing/blackbox',
+        },
+        {
+          sub_title: 'Gray Box',
+          url: '/services/penetration-testing/graybox',
+        },
+        {
+          sub_title: 'Code Review',
+          url: '/services/penetration-testing/code-review',
+        },
+        {
+          sub_title: 'Web Attacks & Tests',
+          url: '/services/penetration-testing/web-attacks-tests',
+        },
+        {
+          sub_title: 'Iot Attacks & Tests',
+          url: '/services/penetration-testing/iot-attacks-tests',
+        },
+      ],
     },
   ]
   return (
@@ -72,7 +94,7 @@ export default function HeaderLandingPage() {
           ))}
           {/* Sub Menu */}
           {isShowSubMenu && (
-            <div className="absolute z-50 hidden w-48 p-6 rounded-md shadow-2xl md:block bg-slate-50 top-8 left-14">
+            <div className="absolute z-50 hidden w-56 p-6 rounded-md shadow-2xl md:block bg-slate-50 top-8 left-14">
               <div className="flex flex-col gap-4">
                 {subMenu.map(({ sub_title, url }, index) => (
                   <ul key={index}>
@@ -81,6 +103,17 @@ export default function HeaderLandingPage() {
                         {sub_title}
                       </li>
                     </Link>
+                    {sub_title === 'Penetration Testing' && (
+                      <ul className="ml-4 list-disc">
+                        {subMenu[3].sub_menu.map(({ sub_title, url }) => (
+                          <Link key={url} href={url}>
+                            <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">
+                              {sub_title}
+                            </li>
+                          </Link>
+                        ))}
+                      </ul>
+                    )}
                   </ul>
                 ))}
               </div>
@@ -123,6 +156,17 @@ export default function HeaderLandingPage() {
                             {sub_title}
                           </li>
                         </Link>
+                        {sub_title === 'Penetration Testing' && (
+                          <ul className="ml-4 list-disc">
+                            {subMenu[3].sub_menu.map(({ sub_title, url }) => (
+                              <Link key={url} href={url}>
+                                <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">
+                                  {sub_title}
+                                </li>
+                              </Link>
+                            ))}
+                          </ul>
+                        )}
                       </ul>
                     ))}
                   </div>
