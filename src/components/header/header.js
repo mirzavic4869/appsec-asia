@@ -73,7 +73,7 @@ export default function HeaderLandingPage() {
             <ul key={index}>
               <Link href={item.url}>
                 <li
-                  onClick={() =>
+                  onMouseOver={() =>
                     setIsShowSubMenu(
                       item.title === 'IT Services' ? !isShowSubMenu : false
                     )
@@ -94,7 +94,10 @@ export default function HeaderLandingPage() {
           ))}
           {/* Sub Menu */}
           {isShowSubMenu && (
-            <div className="absolute z-50 hidden w-56 p-6 rounded-md shadow-2xl md:block bg-slate-50 top-8 left-14">
+            <div
+              onMouseLeave={() => setIsShowSubMenu(false)}
+              className="absolute z-50 hidden w-56 p-6 rounded-md shadow-2xl md:block bg-slate-50 top-8 left-14"
+            >
               <div className="flex flex-col gap-4">
                 {subMenu.map(({ sub_title, url }, index) => (
                   <ul key={index}>
@@ -104,7 +107,7 @@ export default function HeaderLandingPage() {
                       </li>
                     </Link>
                     {sub_title === 'Penetration Testing' && (
-                      <ul className="ml-4 list-disc">
+                      <ul className="ml-2">
                         {subMenu[3].sub_menu.map(({ sub_title, url }) => (
                           <Link key={url} href={url}>
                             <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">
@@ -157,7 +160,7 @@ export default function HeaderLandingPage() {
                           </li>
                         </Link>
                         {sub_title === 'Penetration Testing' && (
-                          <ul className="ml-4 list-disc">
+                          <ul className="ml-2">
                             {subMenu[3].sub_menu.map(({ sub_title, url }) => (
                               <Link key={url} href={url}>
                                 <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">

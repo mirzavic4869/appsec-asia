@@ -1,5 +1,5 @@
 import { LayoutLandingPage } from '@/components/layouts'
-import { WebAttacks } from '@/components/pages/services-page/penetrationtest'
+import { WebAttacks } from '@/components/pages/services-page/penetration-test'
 import React from 'react'
 
 export default function WebAttacksMenu() {

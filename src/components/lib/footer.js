@@ -12,7 +12,7 @@ export const footerMenu = [
       },
       {
         sub_title: 'Our Product',
-        url: '',
+        url: '/our-product',
       },
       {
         sub_title: 'Trainings',

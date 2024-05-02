@@ -49,7 +49,7 @@ export const navbarLandingPageMenu = [
   },
   {
     title: 'Our Product',
-    url: '',
+    url: '/our-product',
   },
   {
     title: 'Trainings',
