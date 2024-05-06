@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
-export default function OurProduct() {
+export default function HclBigFix() {
   const dataFamily = [
     {
       title: 'Lifecycle',

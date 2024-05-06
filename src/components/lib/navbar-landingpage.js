@@ -22,34 +22,18 @@ export const navbarLandingPageMenu = [
       {
         sub_title: 'Penetration Testing',
         url: '/services/penetration-testing',
-        sub_sub_menu: [
-          {
-            sub_sub_title: 'Black Box',
-            url: '/services/s/penetration-testing/blackbox',
-          },
-          {
-            sub_sub_title: 'Gray Box',
-            url: '/services/s/penetration-testing/graybox',
-          },
-          {
-            sub_sub_title: 'Code Review',
-            url: '/services/s/penetration-testing/code-review',
-          },
-          {
-            sub_sub_title: 'Web Attacks & Tests',
-            url: '/services/s/penetration-testing/web-attacks-tests',
-          },
-          {
-            sub_sub_title: 'Iot Attacks & Tests',
-            url: '/services/s/penetration-testing/iot-attacks-tests',
-          },
-        ],
       },
     ],
   },
   {
     title: 'Our Product',
-    url: '/our-product',
+    url: '',
+    sub_menu: [
+      {
+        sub_title: 'HCL Big Fix',
+        url: '/our-product/hcl-bigfix',
+      },
+    ],
   },
   {
     title: 'Trainings',

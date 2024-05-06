@@ -1,3 +1,3 @@
-import OurProduct from './our-product'
+import HclBigFix from './hcl-bigfix'
 
-export { OurProduct }
+export { HclBigFix }

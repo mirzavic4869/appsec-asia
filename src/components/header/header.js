@@ -8,9 +8,10 @@ import Image from 'next/image'
 export default function HeaderLandingPage() {
   // const [active, setActive] = useState(false)
   const [isShowMobileMenu, setIsShowMobileMenu] = useState(false)
-  const [isShowSubMenu, setIsShowSubMenu] = useState(false)
+  const [isShowSubMenuServices, setIsShowSubMenuServices] = useState(false)
+  const [isShowSubMenuOurProduct, setIsShowSubMenuOurProduct] = useState(false)
 
-  const subMenu = [
+  const subMenuServices = [
     {
       sub_title: 'Web and Mobile App Development',
       url: '/services/web-dev',
@@ -50,6 +51,13 @@ export default function HeaderLandingPage() {
       ],
     },
   ]
+
+  const subMenuOurProduct = [
+    {
+      sub_title: 'HCL Big Fix',
+      url: '/our-product/hcl-bigfix',
+    },
+  ]
   return (
     <nav className="sticky top-0 z-40 p-4 bg-white shadow-sm md:px-16 lg:px-20">
       <div className="flex flex-row items-center justify-between mx-auto max-w-7xl">
@@ -74,14 +82,17 @@ export default function HeaderLandingPage() {
               <Link href={item.url}>
                 <li
                   onMouseOver={() =>
-                    setIsShowSubMenu(
-                      item.title === 'IT Services' ? !isShowSubMenu : false
-                    )
+                    item.title === 'IT Services'
+                      ? setIsShowSubMenuServices(!isShowSubMenuServices)
+                      : false || item.title === 'Our Product'
+                        ? setIsShowSubMenuOurProduct(!isShowSubMenuOurProduct)
+                        : false
                   }
                   className="flex items-center gap-2 transition-colors duration-300 hover:text-secondary hover:cursor-pointer"
                 >
                   {item.title}{' '}
-                  {item.title === 'IT Services' ? (
+                  {item.title === 'IT Services' ||
+                  item.title === 'Our Product' ? (
                     <span className="mt-1">
                       <FaChevronDown size={14} />
                     </span>
@@ -92,14 +103,14 @@ export default function HeaderLandingPage() {
               </Link>
             </ul>
           ))}
-          {/* Sub Menu */}
-          {isShowSubMenu && (
+          {/* Sub Menu Services */}
+          {isShowSubMenuServices && (
             <div
-              onMouseLeave={() => setIsShowSubMenu(false)}
+              onMouseLeave={() => setIsShowSubMenuServices(false)}
               className="absolute z-50 hidden w-56 p-6 rounded-md shadow-2xl md:block bg-slate-50 top-8 left-14"
             >
               <div className="flex flex-col gap-4">
-                {subMenu.map(({ sub_title, url }, index) => (
+                {subMenuServices.map(({ sub_title, url }, index) => (
                   <ul key={index}>
                     <Link href={url}>
                       <li className="text-sm hover:text-secondary hover:cursor-pointer">
@@ -108,15 +119,37 @@ export default function HeaderLandingPage() {
                     </Link>
                     {sub_title === 'Penetration Testing' && (
                       <ul className="ml-2">
-                        {subMenu[3].sub_menu.map(({ sub_title, url }) => (
-                          <Link key={url} href={url}>
-                            <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">
-                              {sub_title}
-                            </li>
-                          </Link>
-                        ))}
+                        {subMenuServices[3].sub_menu.map(
+                          ({ sub_title, url }) => (
+                            <Link key={url} href={url}>
+                              <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">
+                                {sub_title}
+                              </li>
+                            </Link>
+                          )
+                        )}
                       </ul>
                     )}
+                  </ul>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Sub Menu Our Product */}
+          {isShowSubMenuOurProduct && (
+            <div
+              onMouseLeave={() => setIsShowSubMenuOurProduct(false)}
+              className="absolute z-50 hidden w-56 p-6 rounded-md shadow-2xl md:block bg-slate-50 top-8 left-48"
+            >
+              <div className="flex flex-col gap-4">
+                {subMenuOurProduct.map(({ sub_title, url }, index) => (
+                  <ul key={index}>
+                    <Link href={url}>
+                      <li className="text-sm hover:text-secondary hover:cursor-pointer">
+                        {sub_title}
+                      </li>
+                    </Link>
                   </ul>
                 ))}
               </div>
@@ -134,14 +167,16 @@ export default function HeaderLandingPage() {
                 <Link href={url}>
                   <li
                     onClick={() =>
-                      setIsShowSubMenu(
-                        title === 'IT Services' ? !isShowSubMenu : false
-                      )
+                      title === 'IT Services'
+                        ? setIsShowSubMenuServices(!isShowSubMenuServices)
+                        : false || title === 'Our Product'
+                          ? setIsShowSubMenuOurProduct(!isShowSubMenuOurProduct)
+                          : false
                     }
                     className="flex items-center gap-2 hover:text-secondary hover:cursor-pointer"
                   >
                     {title}{' '}
-                    {title === 'IT Services' ? (
+                    {title === 'IT Services' || title === 'Our Product' ? (
                       <span className="mt-1">
                         <FaChevronDown size={14} />
                       </span>
@@ -150,9 +185,9 @@ export default function HeaderLandingPage() {
                     )}
                   </li>
                 </Link>
-                {isShowSubMenu && title === 'IT Services' && (
+                {isShowSubMenuServices && title === 'IT Services' && (
                   <div className="flex flex-col gap-3 py-4 ml-4 md:hidden">
-                    {subMenu.map(({ sub_title, url }, index) => (
+                    {subMenuServices.map(({ sub_title, url }, index) => (
                       <ul key={index}>
                         <Link href={url}>
                           <li className="text-sm hover:text-secondary hover:cursor-pointer">
@@ -161,15 +196,30 @@ export default function HeaderLandingPage() {
                         </Link>
                         {sub_title === 'Penetration Testing' && (
                           <ul className="ml-2">
-                            {subMenu[3].sub_menu.map(({ sub_title, url }) => (
-                              <Link key={url} href={url}>
-                                <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">
-                                  {sub_title}
-                                </li>
-                              </Link>
-                            ))}
+                            {subMenuServices[3].sub_menu.map(
+                              ({ sub_title, url }) => (
+                                <Link key={url} href={url}>
+                                  <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">
+                                    {sub_title}
+                                  </li>
+                                </Link>
+                              )
+                            )}
                           </ul>
                         )}
+                      </ul>
+                    ))}
+                  </div>
+                )}
+                {isShowSubMenuOurProduct && title === 'Our Product' && (
+                  <div className="flex flex-col gap-3 py-4 ml-4 md:hidden">
+                    {subMenuOurProduct.map(({ sub_title, url }, index) => (
+                      <ul key={index}>
+                        <Link href={url}>
+                          <li className="text-sm hover:text-secondary hover:cursor-pointer">
+                            {sub_title}
+                          </li>
+                        </Link>
                       </ul>
                     ))}
                   </div>
