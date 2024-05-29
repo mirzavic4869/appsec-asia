@@ -57,6 +57,22 @@ export default function HeaderLandingPage() {
       sub_title: 'HCL Big Fix',
       url: '/our-product/hcl-bigfix',
     },
+    {
+      sub_title: 'AlgoSec',
+      url: 'https://www.westconcomstor.com/id/id/vendors/algosec.html',
+    },
+    {
+      sub_title: 'AudioCodes',
+      url: 'https://www.westconcomstor.com/id/id/vendors/audiocodes.html',
+    },
+    {
+      sub_title: 'Avaya',
+      url: 'https://www.westconcomstor.com/id/id/vendors/avaya.html',
+    },
+    {
+      sub_title: 'Ciena',
+      url: 'https://www.westconcomstor.com/id/id/vendors/ciena.html',
+    },
   ]
   return (
     <nav className="sticky top-0 z-40 p-4 bg-white shadow-sm md:px-16 lg:px-20">
@@ -112,7 +128,7 @@ export default function HeaderLandingPage() {
               <div className="flex flex-col gap-4">
                 {subMenuServices.map(({ sub_title, url }, index) => (
                   <ul key={index}>
-                    <Link href={url}>
+                    <Link target="_blank" href={url}>
                       <li className="text-sm hover:text-secondary hover:cursor-pointer">
                         {sub_title}
                       </li>
@@ -121,7 +137,7 @@ export default function HeaderLandingPage() {
                       <ul className="ml-2">
                         {subMenuServices[3].sub_menu.map(
                           ({ sub_title, url }) => (
-                            <Link key={url} href={url}>
+                            <Link target="_blank" key={url} href={url}>
                               <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">
                                 {sub_title}
                               </li>
@@ -145,7 +161,7 @@ export default function HeaderLandingPage() {
               <div className="flex flex-col gap-4">
                 {subMenuOurProduct.map(({ sub_title, url }, index) => (
                   <ul key={index}>
-                    <Link href={url}>
+                    <Link target="_blank" href={url}>
                       <li className="text-sm hover:text-secondary hover:cursor-pointer">
                         {sub_title}
                       </li>
