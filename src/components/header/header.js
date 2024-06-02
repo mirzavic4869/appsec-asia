@@ -59,19 +59,19 @@ export default function HeaderLandingPage() {
     },
     {
       sub_title: 'AlgoSec',
-      url: 'https://www.westconcomstor.com/id/id/vendors/algosec.html',
+      url: '/our-product/algosec',
     },
     {
       sub_title: 'AudioCodes',
-      url: 'https://www.westconcomstor.com/id/id/vendors/audiocodes.html',
+      url: '/our-product/audiocodes',
     },
     {
       sub_title: 'Avaya',
-      url: 'https://www.westconcomstor.com/id/id/vendors/avaya.html',
+      url: '/our-product/avaya',
     },
     {
       sub_title: 'Ciena',
-      url: 'https://www.westconcomstor.com/id/id/vendors/ciena.html',
+      url: '/our-product/ciena',
     },
   ]
   return (
