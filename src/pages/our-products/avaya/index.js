@@ -1,16 +1,16 @@
 import { LayoutLandingPage } from '@/components/layouts'
-import { Algosec } from '@/components/pages/our-product'
+import { Avaya } from '@/components/pages/our-products'
 
 import React from 'react'
 
-export default function AlgosecMenu() {
+export default function AvayaMenu() {
   return (
     <>
-      <Algosec />
+      <Avaya />
     </>
   )
 }
 
-AlgosecMenu.getLayout = function getLayout(page) {
+AvayaMenu.getLayout = function getLayout(page) {
   return <LayoutLandingPage>{page}</LayoutLandingPage>
 }

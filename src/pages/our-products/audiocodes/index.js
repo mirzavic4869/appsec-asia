@@ -1,5 +1,5 @@
 import { LayoutLandingPage } from '@/components/layouts'
-import { AudioCodes } from '@/components/pages/our-product'
+import { AudioCodes } from '@/components/pages/our-products'
 
 import React from 'react'
 

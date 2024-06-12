@@ -1,16 +1,16 @@
 import { LayoutLandingPage } from '@/components/layouts'
-import { Avaya } from '@/components/pages/our-product'
+import { HclBigFix } from '@/components/pages/our-products'
 
 import React from 'react'
 
-export default function AvayaMenu() {
+export default function HclBigFixMenu() {
   return (
     <>
-      <Avaya />
+      <HclBigFix />
     </>
   )
 }
 
-AvayaMenu.getLayout = function getLayout(page) {
+HclBigFixMenu.getLayout = function getLayout(page) {
   return <LayoutLandingPage>{page}</LayoutLandingPage>
 }

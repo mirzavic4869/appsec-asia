@@ -1,5 +1,5 @@
 import { LayoutLandingPage } from '@/components/layouts'
-import { Ciena } from '@/components/pages/our-product'
+import { Ciena } from '@/components/pages/our-products'
 
 import React from 'react'
 

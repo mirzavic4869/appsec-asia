@@ -1,16 +1,16 @@
 import { LayoutLandingPage } from '@/components/layouts'
-import { HclBigFix } from '@/components/pages/our-product'
+import { Algosec } from '@/components/pages/our-products'
 
 import React from 'react'
 
-export default function HclBigFixMenu() {
+export default function AlgosecMenu() {
   return (
     <>
-      <HclBigFix />
+      <Algosec />
     </>
   )
 }
 
-HclBigFixMenu.getLayout = function getLayout(page) {
+AlgosecMenu.getLayout = function getLayout(page) {
   return <LayoutLandingPage>{page}</LayoutLandingPage>
 }

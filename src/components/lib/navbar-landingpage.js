@@ -27,11 +27,11 @@ export const navbarLandingPageMenu = [
   },
   {
     title: 'Our Product',
-    url: '',
+    url: '/our-products',
     sub_menu: [
       {
         sub_title: 'HCL Big Fix',
-        url: '/our-product/hcl-bigfix',
+        url: '/our-products/hcl-bigfix',
       },
     ],
   },
