@@ -1,15 +1,27 @@
 import { optionSolutions, ourProductsData } from '@/components/lib'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function OurProducts() {
+  const [selectedMenu, setSelectedMenu] = useState('Choose Solution...')
+
+  const handleSelectedMenu = (e) => {
+    setSelectedMenu(e.target.value)
+  }
+
+  const filteredProducts = ourProductsData.filter(({ solution }) =>
+    solution?.includes(selectedMenu)
+  )
+
   return (
     <div className="px-4 py-12 md:px-16 lg:px-20 bg-background">
       <div className="mx-auto max-w-7xl">
-        {/* Filter */}
         <div className="flex justify-center mb-12">
-          <select className="px-4 md:w-1/3 w-full py-2 border border-solid rounded-md border-[#e2e2e2] focus:border-secondary focus:ring-secondary">
+          <select
+            onChange={handleSelectedMenu}
+            className="px-4 md:w-1/3 w-full py-2 border border-solid rounded-md border-[#e2e2e2] focus:border-secondary focus:ring-secondary"
+          >
             {optionSolutions.map(({ title }, index) => (
               <option key={index} value={title}>
                 {title}
@@ -18,7 +30,7 @@ export default function OurProducts() {
           </select>
         </div>
         <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
-          {ourProductsData.map(({ image, url, title, desc }, index) => (
+          {filteredProducts.map(({ image, url, title, desc }, index) => (
             <Link
               key={index}
               href={url}

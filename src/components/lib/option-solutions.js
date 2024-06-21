@@ -30,7 +30,7 @@ export const optionSolutions = [
     title: 'Moving to the Cloud',
   },
   {
-    title: '0365 Migration',
+    title: 'O365 Migration',
   },
   {
     title: 'Secure access service edge (SASE)',
