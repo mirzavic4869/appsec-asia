@@ -11,6 +11,6 @@ export default function ClarotyMenu() {
   )
 }
 
-clarotyMenu.getLayout = function getLayout(page) {
+ClarotyMenu.getLayout = function getLayout(page) {
   return <LayoutLandingPage>{page}</LayoutLandingPage>
 }
