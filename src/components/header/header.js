@@ -55,23 +55,23 @@ export default function HeaderLandingPage() {
   const subMenuOurProduct = [
     {
       sub_title: 'HCL Big Fix',
-      url: '/our-product/hcl-bigfix',
+      url: '/our-products/hcl-bigfix',
     },
     {
       sub_title: 'AlgoSec',
-      url: '/our-product/algosec',
+      url: '/our-products/algosec',
     },
     {
       sub_title: 'AudioCodes',
-      url: '/our-product/audiocodes',
+      url: '/our-products/audiocodes',
     },
     {
       sub_title: 'Avaya',
-      url: '/our-product/avaya',
+      url: '/our-products/avaya',
     },
     {
       sub_title: 'Ciena',
-      url: '/our-product/ciena',
+      url: '/our-products/ciena',
     },
   ]
   return (
