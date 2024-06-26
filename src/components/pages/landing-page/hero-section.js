@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="text-center text-white">
           <h1 className="mb-6 text-4xl font-bold md:text-5xl">Appsec Asia</h1>
-          <h6 className="md:w-[48rem] mx-4 md:mx-auto mb-16">
+          <h6 className="lg:w-[48rem] md:w-[36rem] mx-4 md:mx-auto mb-16">
             <strong>Appsec Asia</strong> is a company involved in providing
             IT-security, specializing in computer, network, and application
             security system as well as computer software development.

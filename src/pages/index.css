@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-  color: #121212;
+  color: #333333;
 }
 
 .bg-hero {
-  background: url('../assets/images/banner.jpg'), no-repeat;
+  background: url('/banner.jpg'), no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -23,24 +23,24 @@ body {
 }
 
 .bg-asia {
-  background: url('../assets/images/bg-asia.png'), no-repeat;
+  background: url('/bg-asia.png'), no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .bg-moto {
-  background: url('../assets/images/bg-moto.png'), no-repeat;
+  background: url('/bg-moto.png'), no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .bg-contact {
-  background: url('../assets/images/bg-contact.png'), no-repeat;
+  background: url('/bg-contact.png'), no-repeat;
   background-position: center;
   background-size: cover;
 }
 .bg-train {
-  background: url('../assets/images/bg-train.jpg'), no-repeat;
+  background: url('/bg-train.jpg'), no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;

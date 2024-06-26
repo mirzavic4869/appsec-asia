@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import photo from '@/assets/images/photo.png'
-import people from '@/assets/images/people.png'
+import photo from '/public/photo.png'
+import people from '/public/people.png'
 import React, { useEffect, useState } from 'react'
 import { testimonailData } from '@/components/lib'
 import { randomCard } from '@/components/lib'

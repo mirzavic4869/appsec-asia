@@ -7,6 +7,7 @@ import {
   TestimonySection,
   TrainingsSection,
   ContactUsSection,
+  OurClientSection,
 } from '@/components/pages/landing-page'
 import React from 'react'
 
@@ -19,6 +20,7 @@ export default function Home() {
       <TestimonySection />
       <MotoSection />
       <TrainingsSection />
+      <OurClientSection />
       <ContactUsSection />
     </>
   )

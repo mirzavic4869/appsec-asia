@@ -12,7 +12,7 @@ export const footerMenu = [
       },
       {
         sub_title: 'Our Product',
-        url: 'https://www.sdt.co.id/product/hcl-bigfix',
+        url: '/our-product',
       },
       {
         sub_title: 'Trainings',
@@ -29,19 +29,19 @@ export const footerMenu = [
     sub_menu: [
       {
         sub_title: 'Web and Mobile App Development',
-        url: '/web-dev',
+        url: '/services/web-dev',
       },
       {
         sub_title: 'SDLC Consulting',
-        url: '/sdlc-consulting',
+        url: '/services/sdlc-consulting',
       },
       {
         sub_title: 'Digital Forensic Investigation',
-        url: '/digital-forensic',
+        url: '/services/digital-forensic',
       },
       {
         sub_title: 'Penetration Testing',
-        url: '/penetration-testing',
+        url: '/services/penetration-testing',
       },
     ],
   },

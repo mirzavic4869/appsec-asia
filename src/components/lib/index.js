@@ -19,6 +19,10 @@ import {
 } from './detail-training'
 import { randomCard } from './random-card'
 import { testimonailData } from './testimony'
+import { webAttacksData } from './web-attacks'
+import { iotAttacksData } from './iot-attacks'
+import { ourProductsData } from './our-products'
+import { optionSolutions } from './option-solutions'
 
 export {
   navbarLandingPageMenu,
@@ -40,4 +44,8 @@ export {
   comptiaA,
   randomCard,
   testimonailData,
+  webAttacksData,
+  iotAttacksData,
+  ourProductsData,
+  optionSolutions,
 }
