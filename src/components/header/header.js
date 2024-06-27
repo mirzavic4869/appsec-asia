@@ -78,7 +78,12 @@ export default function HeaderLandingPage() {
     <nav className="sticky top-0 z-40 p-4 bg-white shadow-sm md:px-16 lg:px-20">
       <div className="flex flex-row items-center justify-between mx-auto max-w-7xl">
         <Link href={'/'}>
-          <Image src={logo} alt="Logo Appsecasia" width={120} />
+          <Image
+            src="/logo-appsecasia.png"
+            alt="Logo Appsecasia"
+            width={120}
+            height={120}
+          />
         </Link>
         {!isShowMobileMenu ? (
           <FaBars
