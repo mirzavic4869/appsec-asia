@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { navbarLandingPageMenu } from '../lib'
 import { FaBars, FaChevronDown, FaTimes } from 'react-icons/fa'
-import logo from '/public/logo-appsecasia.png'
 import Image from 'next/image'
 
 export default function HeaderLandingPage() {

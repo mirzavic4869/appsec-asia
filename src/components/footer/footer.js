@@ -11,7 +11,7 @@ export default function FooterLandingPage() {
       <div className="flex flex-col justify-between gap-6 mx-auto md:flex-row max-w-7xl">
         <div className="flex flex-col md:justify-between">
           <Link href={'/'} className="mb-8">
-            <Image src={logo} alt="Logo Appsecasia" width={180} />
+            <Image src={logo} alt="Logo Appsecasia" width={180} height={180} />
           </Link>
           {/* Location */}
           <p className="text-white md:w-[16rem] lg:w-[24rem]">

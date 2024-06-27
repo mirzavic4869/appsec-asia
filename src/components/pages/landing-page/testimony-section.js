@@ -44,7 +44,13 @@ export default function TestimonySection() {
 
         {/* People */}
         <div className="hidden md:flex md:justify-start">
-          <Image src={people} alt='"People' className="md:w-[48rem]" />
+          <Image
+            src={people}
+            width={600}
+            height={600}
+            alt='"People'
+            className="md:w-[48rem]"
+          />
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import photo from '/public/card-service1.png'
 import React from 'react'
 import { serviceData } from '@/components/lib'
 import { ButtonOutline2 } from '@/components/button'
@@ -22,7 +21,12 @@ export default function ServicesSection() {
               key={index}
               className="max-w-sm transition-all duration-300 ease-in-out bg-white shadow-lg rounded-t-3xl hover:shadow-xl hover:bg-secondary hover:text-white"
             >
-              <Image src={photo} alt="Service" />
+              <Image
+                src="/card-service1.png"
+                width={400}
+                height={400}
+                alt="Service"
+              />
               <div className="p-6 ">
                 <h3 className="text-xl font-bold">{title}</h3>
                 <p className="my-4 text-sm">{desc}</p>

@@ -1,7 +1,5 @@
 import Image from 'next/image'
-import bgAsia from '/public/bg-asia.png'
 import React from 'react'
-import logo from '/public/logo-appsecasia.png'
 
 export default function AboutSection() {
   return (
@@ -27,15 +25,21 @@ export default function AboutSection() {
           </div>
           <div>
             <Image
-              src={bgAsia}
+              src="/bg-asia.png"
               alt="bg-asia"
               className="absolute right-0 md:w-[36rem] -z-10 top-[42rem] md:top-[38rem]"
               width={400}
+              height={400}
             />
           </div>
         </div>
         <div className="flex justify-end opacity-10">
-          <Image src={logo} alt="Logo Appsecasia" width={180} />
+          <Image
+            src="/logo-appsecasia.png"
+            alt="Logo Appsecasia"
+            width={180}
+            height={180}
+          />
         </div>
       </div>
     </div>
