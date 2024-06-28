@@ -5,7 +5,7 @@ export const navbarLandingPageMenu = [
   },
   {
     title: 'IT Services',
-    url: '',
+    url: '/services',
     sub_menu: [
       {
         sub_title: 'Web and Mobile App Development',
@@ -26,14 +26,8 @@ export const navbarLandingPageMenu = [
     ],
   },
   {
-    title: 'Our Product',
+    title: 'Our Products',
     url: '/our-products',
-    sub_menu: [
-      {
-        sub_title: 'HCL Big Fix',
-        url: '/our-products/hcl-bigfix',
-      },
-    ],
   },
   {
     title: 'Trainings',

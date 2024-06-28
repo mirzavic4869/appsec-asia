@@ -3,9 +3,10 @@ import React, { useState } from 'react'
 import { navbarLandingPageMenu } from '../lib'
 import { FaBars, FaChevronDown, FaTimes } from 'react-icons/fa'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 export default function HeaderLandingPage() {
-  // const [active, setActive] = useState(false)
+  const router = useRouter()
   const [isShowMobileMenu, setIsShowMobileMenu] = useState(false)
   const [isShowSubMenuServices, setIsShowSubMenuServices] = useState(false)
   const [isShowSubMenuOurProduct, setIsShowSubMenuOurProduct] = useState(false)
@@ -51,28 +52,6 @@ export default function HeaderLandingPage() {
     },
   ]
 
-  const subMenuOurProduct = [
-    {
-      sub_title: 'HCL Big Fix',
-      url: '/our-products/hcl-bigfix',
-    },
-    {
-      sub_title: 'AlgoSec',
-      url: '/our-products/algosec',
-    },
-    {
-      sub_title: 'AudioCodes',
-      url: '/our-products/audiocodes',
-    },
-    {
-      sub_title: 'Avaya',
-      url: '/our-products/avaya',
-    },
-    {
-      sub_title: 'Ciena',
-      url: '/our-products/ciena',
-    },
-  ]
   return (
     <nav className="sticky top-0 z-40 p-4 bg-white shadow-sm md:px-16 lg:px-20">
       <div className="flex flex-row items-center justify-between mx-auto max-w-7xl">
@@ -99,25 +78,19 @@ export default function HeaderLandingPage() {
         <div className="relative flex-row items-center hidden gap-8 md:flex">
           {navbarLandingPageMenu.map((item, index) => (
             <ul key={index}>
-              <Link href={item.url}>
+              <Link href={item.url} target="_self">
                 <li
                   onMouseOver={() =>
-                    item.title === 'IT Services'
-                      ? setIsShowSubMenuServices(!isShowSubMenuServices)
-                      : false || item.title === 'Our Product'
-                        ? setIsShowSubMenuOurProduct(!isShowSubMenuOurProduct)
-                        : false
+                    item.title === 'IT Services' &&
+                    setIsShowSubMenuServices(!isShowSubMenuServices)
                   }
-                  className="flex items-center gap-2 transition-colors duration-300 hover:text-secondary hover:cursor-pointer"
+                  className={`flex items-center gap-2 transition-colors duration-300 hover:text-secondary hover:cursor-pointer ${router.asPath === item.url ? 'text-secondary' : ''}`}
                 >
                   {item.title}{' '}
-                  {item.title === 'IT Services' ||
-                  item.title === 'Our Product' ? (
+                  {item.title === 'IT Services' && (
                     <span className="mt-1">
-                      <FaChevronDown size={14} />
+                      <FaChevronDown size={12} />
                     </span>
-                  ) : (
-                    ''
                   )}
                 </li>{' '}
               </Link>
@@ -133,7 +106,9 @@ export default function HeaderLandingPage() {
                 {subMenuServices.map(({ sub_title, url }, index) => (
                   <ul key={index}>
                     <Link target="_blank" href={url}>
-                      <li className="text-sm hover:text-secondary hover:cursor-pointer">
+                      <li
+                        className={`text-sm hover:text-secondary hover:cursor-pointer ${router.asPath === url ? 'text-secondary' : ''}`}
+                      >
                         {sub_title}
                       </li>
                     </Link>
@@ -142,7 +117,9 @@ export default function HeaderLandingPage() {
                         {subMenuServices[3].sub_menu.map(
                           ({ sub_title, url }) => (
                             <Link target="_blank" key={url} href={url}>
-                              <li className="my-1 text-xs hover:text-secondary hover:cursor-pointer">
+                              <li
+                                className={`my-1 text-xs hover:text-secondary hover:cursor-pointer ${router.asPath === url ? 'text-secondary' : ''}`}
+                              >
                                 {sub_title}
                               </li>
                             </Link>

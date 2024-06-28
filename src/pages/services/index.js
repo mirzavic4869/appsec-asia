@@ -1,16 +1,16 @@
 import { LayoutLandingPage } from '@/components/layouts'
-import { Ciena } from '@/components/pages/our-products'
+import { Services } from '@/components/pages/services-page'
 
 import React from 'react'
 
-export default function CienaMenu() {
+export default function ServicesMenu() {
   return (
     <>
-      <Ciena />
+      <Services />
     </>
   )
 }
 
-CienaMenu.getLayout = function getLayout(page) {
+ServicesMenu.getLayout = function getLayout(page) {
   return <LayoutLandingPage>{page}</LayoutLandingPage>
 }
